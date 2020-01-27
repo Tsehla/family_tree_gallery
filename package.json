@@ -1,0 +1,24 @@
+{
+  "name": "nkhi-family",
+  "version": "1.0.0",
+  "description": "keeps family tree",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "family",
+    "tree",
+    "history",
+    "directory"
+  ],
+  "author": "tsehla nkhi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "pouchdb": "^7.1.1"
+  }
+}

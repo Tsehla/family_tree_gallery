@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tree</title>
+        <meta name="description" content="family tree">
+        <link id="favicon" rel="icon" href="" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="style/bootstrap.min.css"> <!-- bootstratp css -->
+        <link rel="stylesheet" href="style/w3.css"> <!-- w3c styles css framework-->
+        <link rel="stylesheet" href="style/index.css"> <!-- css -->
+
+        <!-- css style -->
+        <style>
+        
+        
+        </style>
+
+
+    </head>
+    <body onload="home_page_porpulate()">
+        <!-- +++++++++++++++++++++ Header section +++++++++++++++++++++ -->
+        <header>
+
+        </header>
+
+        <!-- +++++++++++++++++++++ Body section +++++++++++++++++++++ -->
+        <main>
+            
+            <!-- add profile form-->
+            <div id='profile_form_container' style="width: 100vw;height: 97vh;position: absolute; top:0;left:0; display: none;" ></div>
+
+            <!-- images wall -->
+            <div id='main_background_profile_iages' style="width: 100vw;height:100vh;"> </div>
+            
+            <!-- image profile info -->
+            <div id='image_profile_info_container' style="width: 100vw; height:99vh;position: absolute; top:0px;left: 0px; display: none;" onclick="this.style.display='none'">
+                <div style="min-width : 280px;width: 80vw; min-height: 450px; height: auto;  margin: 10% auto auto 10%;" class='w3-container w3-white'>
+
+                    <button class='w3-block btn btn-primary' style="margin: 1vh auto 0px auto;">Login</button>
+                    <button class='w3-block btn btn-warning' onclick='add_new_account();document.getElementById("image_profile_info_container").style.display="none"' style="margin: 1vh auto 0px auto;">Create profile</button>
+
+                    <hr />
+
+                    <div style="min-width:220px;width: 70vw;height:160px;height: auto;">
+
+                        <div id='profile_image_block' style="width: 40%; height: 160px; display: inline-block;"></div>
+
+                        <div style="width: 55%;height: auto; float: right;">
+
+                            <div id='user-name' class='' style="margin: 2vh auto auto auto;"></div>
+                            <div id='user-lastname' class='' style="margin: 2vh auto auto auto;"></div>
+                            <div id='user-birthdate' class='' style="margin: 2vh auto auto auto;"></div>
+                            <div id='user-city' class='' style="margin: 2vh auto auto auto;"></div>
+                        
+                        </div>
+            
+                    </div>
+
+                    <hr />
+
+                    <p id='about-me'></p>
+
+                    <hr >
+
+                    <div id='family_tree_image_stripe_container' style='width:100%;height: 140px;'>
+
+                        <div id='family_tree_image_stripe' style="width:auto;height:140px; overflow-x: auto;
+                            white-space: nowrap; margin: auto auto 10px auto;" onclick="alert('feature to be added')">
+
+                            <figure  style='display: inline-block; margin: 0px 5px 0px 5px'>
+                                <img src='images/upload/profile_image/daughter_placeholder.jpg' style='height: 100px;' >
+                                <figcaption style='font-size: xx-small;text-align: center;'>Daughter</figcaption>
+                            </figure>
+
+                            <figure style='display: inline-block; margin: 0px 5px 0px 5px'>
+                                <img src='images/upload/profile_image/female_placeholder.jpg' style='height: 100px;'>
+                                <figcaption style='font-size: xx-small; text-align: center;'>Mother</figcaption>
+                            </figure>
+                            
+                            <figure style='display: inline-block; margin: 0px 5px 0px 5px'>
+                                <img src='images/upload/profile_image/male_placeholder.jpg' style='height: 100px;'>
+                                <figcaption style='font-size: xx-small; text-align: center;'>Father</figcaption>
+                            </figure>
+
+                            <figure style='display: inline-block; margin: 0px 5px 0px 5px'>
+                                <img src='images/upload/profile_image/son_placeholder.jpg' style='height: 100px;'>
+                                <figcaption style='font-size: xx-small; text-align: center;'>Son</figcaption>
+                            </figure>
+                        
+                        </div>
+                    
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+           
+
+
+        </main>
+
+        <!-- +++++++++++++++++++++ Footer section +++++++++++++++++++++ -->
+        <footer>
+
+        </footer>
+
+
+        <!-- +++++++++++++++++++++ Other section  +++++++++++++++++++++ -->
+
+        <!-- import the webpage's client-side javascript file -->
+        <script src="scripts/pouchdb-7.1.1.min.js" defer></script><!-- pouch client-side database-->
+        <script src="scripts/jquery-3.4.1.min.js" defer></script><!-- jquery-->
+        <script src="scripts/index.js" defer></script><!-- javascript -->
+    </body>
+</html>
