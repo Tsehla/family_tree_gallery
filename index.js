@@ -9,7 +9,7 @@ require('dotenv').config();//dot env module
 
 
 
-var server_listen_port = 3001;//port express server is running on
+var server_listen_port = 3000;//port express server is running on
 
 
 //__________________________________ routes _____________________________
